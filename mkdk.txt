@@ -1,0 +1,22 @@
+MKDK-SETUP THE FULL OPERATING SYSTEM
+This is a pretty small os. But it may not be full. To setup the full os follow these steps.
+
+This is from the file setupfull.tem, so please read it for best results!
+Type the command:
+
+
+
+Soon you should see something on your screen. Like a document thing, CRTL+O then click ENTER then CRTL+X. After that, your done!
+Or, if it lets you, put this in:
+
+nano .bashrc
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+alias ardenmk='sudo apt-get update; sudo apt-get upgrade; echo "ardenmk"'
+alias mbi='nano .bashrc; alias ll='ls -l'; alias la='ls -A'; alias l='ls -CF'; echo "mbi"'
+alias readme='echo -Basic-; echo This is ArdenWARE 1.0, this is a test image for ArdenWARE. The other test image can be installed with ver13.tem! All .tem files; echo are ran with terminal. Or run setupextra.tem for a full installion.; echo -Custom Commands Full Installion Version Only-; echo mbi- a base for making a custom command.; echo ardenmk- fully update system DO NOT USE TO UPDATE REGULARLY; echo readme- opens readme in terminal; echo system-cksum- performs a checksum on important files of the os; echo -Games FULL INSTALLION ONLY-; echo Type the commands below to play a game.; echo bastet- play a tetris like game; echo ninvaders- play space invaders; echo nsnake- play a snake game; echo pacman4console- play pacman; echo atc- manage air traffic; echo ./2048- play 2048; echo ssh sshtron.zachlatta.com- play tron; echo moon-buggy- play moon buggy'
+alias system-cksum='cksum _service; cksum config.kiwi; cksum config.sh'
+
+If that does not work, get a version of this os with the full os preinstalled.
+

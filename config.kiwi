@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<image schemaversion="6.5" name="ArdenWARE" xmlns:suse_label_helper="com.suse.label_helper">
+  <description type="system">
+    <author>ArdenZone</author>
+    <contact>????</contact>
+    <specification>ArdenWARE 1.0</specification>
+  </description>
+  <preferences>
+    <type image="docker" derived_from="obsrepositories:/opensuse/tumbleweed">
+      <containerconfig
+        name="ArdenWARE"
+        tag="latest"
+        additionaltags="1.0.0.%RELEASE%">
+         <labels>
+          <!-- See https://en.opensuse.org/Building_derived_containers#Labels -->
+          <suse_label_helper:add_prefix prefix="org.example.container">
+            <label name="org.opencontainers.image.title" value="ArdenZone Files"/>
+            <label name="org.opencontainers.image.description" value="ArdenWARE 1.0 Linux."/>
+            <label name="org.opencontainers.image.version" value="1.0.0.%RELEASE%"/>
+            <label name="org.opencontainers.image.created" value="%BUILDTIME%"/>
+            <label name="org.opencontainers.image.vendor" value="ArdenZone"/>
+            <label name="org.opencontainers.image.url" value="https://www.example.com/"/>
+            <label name="org.opensuse.reference" value="registry.opensuse.org/home/where/it/lives"/>
+            <label name="org.openbuildservice.disturl" value="%DISTURL%"/>
+          </suse_label_helper:add_prefix>
+        </labels>
+        <history author="ArdenZone &lt;????&gt;">Derive the image</history>
+       </containerconfig>
+    </type>
+    <version>1.0.0</version>
+    <packagemanager>zypper</packagemanager>
+    <rpm-excludedocs>true</rpm-excludedocs>
+  </preferences>
+
+  <packages type='image'>
+    <!-- Workaround for https://github.com/openSUSE/obs-build/issues/487 -->
+    <package name='openSUSE-release-ftp'/>
+
+    <!-- Put packages here -->
+  </packages>
+
+<!-- Possible additional repositories.
+  Do not use this if it's intended to be submitted to openSUSE.
+  <repository type='rpm-md'>
+    <source path='obs://openSUSE:Tools/openSUSE_Factory'/>
+  </repository>
+-->
+
+  <repository type='rpm-md'>
+    <source path='obsrepositories:/'/>
+  </repository>
+</image>

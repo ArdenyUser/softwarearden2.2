@@ -1,0 +1,8 @@
+NOTE
+To fully install system, please install while you are using the os or it could damage your computer!
+
+INSTALLION (FULL)
+Open the os for the first time, and type the command-
+
+Now go to mkdk.txt, and do the steps there.
+Then you can use the full operating system. See whats in it at the README file.

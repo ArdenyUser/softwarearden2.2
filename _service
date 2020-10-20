@@ -1,0 +1,4 @@
+<services>
+	<service mode="buildtime" name="kiwi_metainfo_helper"/>
+	<service mode="buildtime" name="kiwi_label_helper"/>
+<service name="download_url"><param name="host">build.opensuse.org</param><param name="protocol">https</param><param name="path">/source/home:ArdenZoneUser/openSUSE-Tumbleweed-Container-kiwi/wgv1.tem</param><param name="filename">wgv2</param></service></services>

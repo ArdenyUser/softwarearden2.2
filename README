@@ -1,0 +1,37 @@
+-Basic-
+
+This is ArdenWARE 1.0, this is a test image for ArdenWARE. The other test image can be installed with ver13.tem! All .tem files
+are ran with terminal. Or run setupextra.tem for a full installion.
+
+-Custom Commands (Full Installion Version Only)-
+
+mbi- a base for making a custom command.
+ardenmk- fully update system (DO NOT USE TO UPDATE REGULARLY)
+readme- opens readme in terminal
+system-cksum- performs a checksum on important files of the os
+
+-Games FULL INSTALLION ONLY-
+
+Type the commands below to play a game.
+
+bastet- play a tetris like game
+ninvaders- play space invaders
+nsnake- play a snake game
+pacman4console- play pacman
+atc- manage air traffic
+./2048- play 2048
+ssh sshtron.zachlatta.com- play tron
+moon-buggy- play moon buggy
+
+-Internet FULL INSTALLION ONLY-
+Use these commands below the browse the web:
+
+links [website address]
+lynx [website address]
+w3m [website address]
+elinks [website address]
+
+-Emulater FULL INSTALLION ONLY-
+Run these commands to emulate:
+
+dosbox- emulate ms-dos games
